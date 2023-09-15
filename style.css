@@ -20,6 +20,7 @@ body {
 
 .attribution {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .card-wrapper {
@@ -101,8 +102,18 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    justify-content: start;
+  }
   .card-wrapper {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
+    overflow: visible;
+  }
+
+  .card-product img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
 }
